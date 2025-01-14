@@ -31,6 +31,7 @@ firebase.database().ref(`tasks/${userId}`).on("value", snapshot => {
 
 // Add Task
 addBtn.onclick = () => {
+    console.print("being clikced")
     const taskText = todoInput.value.trim();
     if (taskText) {
         const newTaskRef = firebase.database().ref(`tasks/${userId}`).push();
