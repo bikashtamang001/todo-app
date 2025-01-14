@@ -1,16 +1,33 @@
-// Firebase configuration
+// // Firebase configuration
+// const firebaseConfig = {
+//     apiKey: "YOUR_API_KEY",
+//     authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+//     databaseURL: "https://YOUR_PROJECT_ID.firebaseio.com",
+//     projectId: "YOUR_PROJECT_ID",
+//     storageBucket: "YOUR_PROJECT_ID.appspot.com",
+//     messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+//     appId: "YOUR_APP_ID"
+// };
+
+// // Initialize Firebase
+// firebase.initializeApp(firebaseConfig);
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-    databaseURL: "https://YOUR_PROJECT_ID.firebaseio.com",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_PROJECT_ID.appspot.com",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyD1PxDHHemwCt2sNCv_j81ZmdJWRIQ7D1g",
+  authDomain: "todo-app-45705.firebaseapp.com",
+  databaseURL: "https://todo-app-45705-default-rtdb.firebaseio.com",
+  projectId: "todo-app-45705",
+  storageBucket: "todo-app-45705.firebasestorage.app",
+  messagingSenderId: "620434066144",
+  appId: "1:620434066144:web:b486e20bcd51a0ad8a1e85"
 };
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 const db = firebase.database();
 
 // DOM Elements
